@@ -1,12 +1,19 @@
 services:
   - type: web
-    name: Zoom Video SDK Auth Sample
+    name: Zoom Webhook Sample
     runtime: node
     buildCommand: npm install
     startCommand: npm start
-    repo: https://github.com/zoom/webhook-sample
+    repo: https://github.com/sthita3110/zoom-webhook.git
     rootDir: .
     plan: free
     envVars:
       - key: ZOOM_WEBHOOK_SECRET_TOKEN
+        value: QOEleBBfS9mOqyITsN6M6w
+        sync: false
+      - key: HEVO_WEBHOOK_URL
+        value: https://asia-webhook.hevodata.com/t/fswtkibv3t
+        sync: false
+      - key: PORT
+        value: 10000
         sync: false
